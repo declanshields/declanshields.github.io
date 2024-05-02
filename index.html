@@ -63,9 +63,8 @@
 							<article id="work">
 								<h2 class="major">Projects</h2>
 								<p>Below are some of the projects I have completed or are currently in progress during my time at University:</p>
-								<p>Click on the images to be taken to the GitHub repositories.</p>
-								<h3>Audio Programming Module</h3>
-								<span class="image main"><a href="https://github.com/declanshields/Audio-Programming-Module"><img src="images/AudioProgramming.JPG" alt="A Screenshot of the audio system"></a></span>
+								<h3><a href="https://github.com/declanshields/Audio-Programming-Module">Audio Programming Module></a></h3>
+								<iframe width="420" height="315" src="https://www.youtube.com/watch?v=k5zgudm5ObA"></iframe>
 								<p>The purpose of this project was to create an audio tool or system for the Audio Programming Module. I took inspiration from Final Fantasy XIV and designed a system that fades between tracks 
 									when the player moves between trigger boxes. This functionality was implemented using Unreal Engine 5 blueprint nodes, which were places within a Blueprint Function Library.
 									This was done so that the system could be as drag and drop as possible, allowing the developer to drag in the correct functions for when the user overlaps with the trigger to switch tracks.
@@ -75,12 +74,22 @@
 									This project is a currently ongoing group project in which we are tasked with creating a framework from scratch that can compile to multiple platforms, and to create a tech demo with this framework.
 									My task on this project is to design and plan the physics. So far I have created a RigidBody class that handles the 2D movement and collision of polygons by using the Separating Axis Theorem which
 									is where if an axis can be found between the two polygons, then they are not colliding. This method was chosen to limit the amount of individual checks needed between every shape of object allowed.
+									On top of this, I have implemented Ray Casting by subdividing a vector and checking if objects are within that subdivision. I have also worked with the others to support custom collision shapes by reading in custom vertices.
 								</p>
-								<h3>Optimisation Project</h3>
-								<span class="image main"><a href="https://github.com/declanshields/Optimisation-Project/tree/main"><img src="images/Optimisation.jpg" alt="A screenshot of the data from my optimisation project."></a></span>
+								<h3><a href="https://github.com/declanshields/Optimisation-Project/tree/main">Optimisation Project</a></h3>
+								<span class="image main"><img src="images/Optimisation.jpg" alt="A screenshot of the data from my optimisation project."></span>
 								<p>The purpose of this project was to optimise a program that we had been given. I did this by implementing multithreading and quadtrees. Thanks to my optimistations,
 									I managed to improve the speed of the program update loop by 23x from 32.62ms to 1.38ms by using a quadtree of depth 3 (or 32 even quadrants) and 16 threads.
 									All of the optimistation data can be found in spreadsheets in the GitHub repo.
+								</p>
+								<h3><a href="https://github.com/declanshields/Staffs-AI">AI Module</a></h3>
+								<video width="420" height="315" controls>
+									<source src="images/AI Demo Video.mp4" type="video/mp4">
+								</video>
+								<p>
+									The purpose of this module was to learn A star pathfinding. To do this, we were given a DirectX framework to work within. We were then given tasks to learn how A star works and how to create a state machine.
+									Through completing this module, I ended up with a final product where to AI work independently and can have different states, such as seek and wander. They can also use A star pathfinding to create a path to one of two collectables,
+									prioritising whichever is closer.
 								</p>
 							</article>
 
